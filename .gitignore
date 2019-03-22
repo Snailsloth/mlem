@@ -1,5 +1,9 @@
 # Dependency directories
 node_modules/
+front/node_modules/
+
+#frontend build
+front/build
 
 # Logs
 logs

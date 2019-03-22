@@ -18,11 +18,9 @@ class GitCard extends Component {
       // console.log(results.json())
     }).then(data => {
       this.setState({
-
           name: data.login,
           avatar: data.avatar_url,
           url: data.html_url
-
       })
     })
   }
