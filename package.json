@@ -1,0 +1,13 @@
+{
+  "name": "mlembackend",
+  "version": "1.0.0",
+  "description": "backend tools form mlemmlem.ml website",
+  "main": "index.js",
+  "author": "snailsloth",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
