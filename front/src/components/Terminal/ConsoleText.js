@@ -45,12 +45,7 @@ class ConsoleText extends Component {
       <span className="w100">~~~~~</span>
       <span>Name: </span><span className="blue">Oleg</span>
       <span className="w100"></span>
-      <span>Age: </span><span className="blue">32</span>
-      <span className="w100"></span>
       <span>Location: </span><span className="blue">Russia, Saint-Petersburg</span>
-      <span className="w100"></span>
-      <span>Currently: </span><span className="red">Looking for a job! 😵</span>
-
       <span className="w100">~~~~~</span>
       </p>
       <p>
