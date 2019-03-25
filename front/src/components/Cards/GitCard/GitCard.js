@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// import './Footer.scss'
+import style from '../Card.scss'
+// import gitLogo from './Octicons-mark-github.svg'
 
 class GitCard extends Component {
   constructor(){
@@ -30,8 +31,11 @@ class GitCard extends Component {
 
 
         <div>
-          <a href={this.state.url}>{this.state.name}</a>
-          <img src={this.state.avatar} alt={this.state.name}/>
+          <img className="svgMask--git" src={this.state.avatar} alt={this.state.name}/>
+
+          <div className="footerIconInfo">
+            <a href={this.state.url}>{this.state.name}</a>
+          </div>
         </div>
 
 

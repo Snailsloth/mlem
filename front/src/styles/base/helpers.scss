@@ -1,0 +1,23 @@
+.margin{
+  &--auto{
+    margin: auto;
+  }
+  &--large-top{
+    margin-top: (1rem * 3)!important;
+  }
+  &--small-top{
+    margin-top: (1rem)!important;
+  }
+  &--remove-top{
+    margin-top: (0)!important;
+  }
+  &--large-bottom{
+    margin-bottom: (1rem * 3)!important;
+  }
+  &--small-bottom{
+    margin-bottom: (1rem)!important;
+  }
+  &--remove-bottom{
+    margin-bottom: (0)!important;
+  }
+}

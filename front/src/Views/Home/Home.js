@@ -8,7 +8,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container content">
         <p>Homepage</p>
         <h1>{this.state.lang}</h1>
         <Terminal headerTitle="Hello world"/>
