@@ -21,7 +21,7 @@ app.use(helmet.hsts({
 app.use(express.static(path.join(__dirname, 'front/build')));
 
 
-entry
+
 app.get('/', (req, res) =>
   {
     res.status(200).send('Ok');

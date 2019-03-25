@@ -31,8 +31,6 @@ class Terminal extends Component {
 
   skewThis(elemClass){
     let root = document.documentElement;
-    //класс который будет кривулить
-    const needToskew = document.querySelector(elemClass);
     const windowSize = this.getWindowSize();
     window.addEventListener("mousemove", (event)=>{
       //следим за координатами мыши при её движении
@@ -47,7 +45,7 @@ class Terminal extends Component {
 
       let xX = (mouseCoords[0] -virtualXcenter) / tmpX;
       let yY = (mouseCoords[1] -virtualYcenter) / tmpY;
-
+      //меняем :root правила transform у окна терминала(прописаны в scss компонента)
       root.style.setProperty('--terminal-x', Math.ceil(xX) + "deg");
       root.style.setProperty('--terminal-y', Math.ceil(yY) + "deg");
     });
