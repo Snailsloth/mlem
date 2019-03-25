@@ -27,17 +27,35 @@ class GitCard extends Component {
   }
 
   render() {
+
+    const gitDefault = (
+      <div>
+        <img className="svgMask--git" src="Octicons-mark-github.svg" alt="Git icon"/>
+
+        <div className="footerIconInfo">
+          <a href="/">Github username</a>
+        </div>
+      </div>
+    )
+
+
+    const gitSuccess = (
+      <div>
+        <img className="svgMask--git" src={this.state.avatar} alt={this.state.name}/>
+
+        <div className="footerIconInfo">
+          <a href={this.state.url}>{this.state.name}</a>
+          <p>Last commit in project: <br/>
+            <span></span>
+          </p>
+        </div>
+      </div>
+    )
+
+
     return (
 
-
-        <div>
-          <img className="svgMask--git" src={this.state.avatar} alt={this.state.name}/>
-
-          <div className="footerIconInfo">
-            <a href={this.state.url}>{this.state.name}</a>
-          </div>
-        </div>
-
+        (this.state.name.length > 0) ? gitSuccess : gitDefault
 
     );
   }
