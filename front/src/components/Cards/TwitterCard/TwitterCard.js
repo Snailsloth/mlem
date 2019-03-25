@@ -52,7 +52,7 @@ class TwitterCard extends Component {
         <div className="footerCard-Info">
           <a target="_blank"  className="text--center" href={this.state.url}>{this.state.name}</a>
           <p>Last tweet @ {this.state.tweetDate}: <br/>
-            <span>{this.state.tweetText}</span>
+             &laquo;<span> {this.state.tweetText} </span>&raquo;
           </p>
         </div>
       </div>

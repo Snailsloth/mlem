@@ -8,8 +8,9 @@ class Navpanel extends Component {
 
 
           <nav role="navigation" aria-label="Main navigation">
-            <NavLink to="/">/</NavLink>
-            <NavLink to="/contacts">contacts</NavLink>
+            <span>Go to: </span>
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink exact to="/contacts">Contacts</NavLink>
           </nav>
 
 

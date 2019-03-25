@@ -14,20 +14,28 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <Navpanel/>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/contacts" component={Contacts} />
-            <Route component={ErrorPage} />
-          </Switch>
-          <footer className="footer margin--large-top">
+        <>
+
+          <header>
+            <Navpanel/>
+          </header>
+
+          <div className="content">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/contacts" component={Contacts} />
+              <Route component={ErrorPage} />
+            </Switch>
+          </div>
+
+          <footer className="footer">
             <div className="container">
               <GitCard user="Snailsloth"/>
               <TwitterCard user="SnailslothPug"/>
             </div>
           </footer>
-        </div>
+
+        </>
       </BrowserRouter>
     );
   }

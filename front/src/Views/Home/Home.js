@@ -4,13 +4,12 @@ import Terminal from '../../components/Terminal/Terminal'
 
 class Home extends Component {
   state = {
-    lang : ["en", "ru"]
+    pageName: 'Homepage'
   }
   render() {
     return (
       <div className="container content">
-        <p>Homepage</p>
-        <h1>{this.state.lang}</h1>
+        <h1 className="text--center heading">{this.state.pageName}</h1>
         <Terminal headerTitle="Hello world"/>
 
       </div>
