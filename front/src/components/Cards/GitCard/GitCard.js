@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from '../Card.scss'
-// import gitLogo from './Octicons-mark-github.svg'
+import gitLogo from './Octicons-mark-github.svg'
 
 class GitCard extends Component {
   constructor(){
@@ -30,7 +30,7 @@ class GitCard extends Component {
 
     const gitDefault = (
       <div className="footerCard">
-        <img className="svgMask--git" src="Octicons-mark-github.svg" alt="Git icon"/>
+        <img className="svgMask--git" src={gitLogo} alt="Git icon"/>
 
         <div className="footerIconInfo">
           <a href="/">Github username</a>

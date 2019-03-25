@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from '../Card.scss'
-// import gitLogo from './Octicons-mark-github.svg'
+import twitterLogo from './twitter.svg'
 
 class TwitterCard extends Component {
   constructor(){
@@ -36,7 +36,7 @@ class TwitterCard extends Component {
 
     const twitterDefault = (
       <div className="footerCard">
-        <img className="svgMask--git" src="twitter.svg" alt="Twitter icon"/>
+        <img className="svgMask--twitter" src={twitterLogo} alt="Twitter icon"/>
 
         <div className="footerIconInfo">
           <a href="/">Twitter username</a>

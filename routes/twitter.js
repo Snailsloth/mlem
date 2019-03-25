@@ -47,7 +47,6 @@ router.get('/:screenName', cache('1 minutes'), function(req, res, next){
         lastTweetDate: tweets[0].created_at,
         lastTweetText: tweets[0].text,
       }
-      console.log(cardInfo);
       res.json(cardInfo);
     } else {
       res.status(400).send(error);
