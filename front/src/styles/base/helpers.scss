@@ -21,3 +21,20 @@
     margin-bottom: (0)!important;
   }
 }
+
+.text{
+  display: block;
+  width:100%;
+  &--center{
+    @extend .text;
+    text-align: center;
+  }
+  &--left{
+    @extend .text;
+    text-align: center;
+  }
+  &--right{
+    @extend .text;
+    text-align: center;
+  }
+}

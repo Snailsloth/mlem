@@ -29,7 +29,7 @@ class GitCard extends Component {
   render() {
 
     const gitDefault = (
-      <div>
+      <div className="footerCard">
         <img className="svgMask--git" src="Octicons-mark-github.svg" alt="Git icon"/>
 
         <div className="footerIconInfo">
@@ -40,13 +40,13 @@ class GitCard extends Component {
 
 
     const gitSuccess = (
-      <div>
+      <div className="footerCard">
         <img className="svgMask--git" src={this.state.avatar} alt={this.state.name}/>
 
-        <div className="footerIconInfo">
-          <a href={this.state.url}>{this.state.name}</a>
+        <div className="footerCard-Info">
+          <a target="_blank"  className="text--center" href={this.state.url}>{this.state.name}</a>
           <p>Last commit in project: <br/>
-            <span></span>
+            <span>#soon </span>
           </p>
         </div>
       </div>

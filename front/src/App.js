@@ -8,6 +8,7 @@ import ErrorPage from './Views/Error/Error'
 
 import Navpanel from './components/Navpanel/Navpanel'
 import GitCard from './components/Cards/GitCard/GitCard'
+import TwitterCard from './components/Cards/TwitterCard/TwitterCard'
 
 class App extends Component {
   render() {
@@ -20,8 +21,11 @@ class App extends Component {
             <Route exact path="/contacts" component={Contacts} />
             <Route component={ErrorPage} />
           </Switch>
-          <footer className="container footer margin--large-top">
-            <GitCard user="Snailsloth"/>
+          <footer className="footer margin--large-top">
+            <div className="container">
+              <GitCard user="Snailsloth"/>
+              <TwitterCard user="SnailslothPug"/>
+            </div>
           </footer>
         </div>
       </BrowserRouter>

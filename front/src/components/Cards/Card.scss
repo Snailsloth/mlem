@@ -1,12 +1,33 @@
-a{
-  font-size: 1.6rem;
-  color: inherit;
+
+.footerCard{
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid #8a8a8a7a;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  a{
+    font-size: 1.3rem;
+    color: inherit;
+  }
+
+  img{
+    display: block;
+    margin: 0 auto 5px auto;
+    width: 4rem;
+    height:4rem;
+  }
+
+  p{
+    margin: 0;
+    span{
+      margin-top: 5px;
+      color: blue;
+    }
+  }
 }
 
-img{
-  width: 6rem;
-  height:6rem;
-}
+
 
 //footer cards
 .svgMask{
@@ -14,14 +35,18 @@ img{
   webkit-mask-mode: alpha;
   mask-repeat: no-repeat;
   webkit-mask-repeat: no-repeat;
-  mask-size: 6rem;
-  webkit-mask-size: 6rem;
+  mask-size: 4rem;
+  webkit-mask-size: 4rem;
   mask-position: center;
   webkit-mask-position: center;
   &--git{
     @extend .svgMask;
     mask-image: url(./GitCard/Octicons-mark-github.svg);
     webkit-mask-image: url(./GitCard/Octicons-mark-github.svg);
-
+  }
+  &--twitter{
+    @extend .svgMask;
+    mask-image: url(./TwitterCard/twitter.svg);
+    webkit-mask-image: url(./TwitterCard/twitter.svg);
   }
 }

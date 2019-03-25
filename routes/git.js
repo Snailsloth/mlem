@@ -5,13 +5,22 @@ const config = require('../secret')[env];
 
 const axios = require('axios');
 
-/*git api*/
+
+/*
+cache for requests, 15min
+https://www.npmjs.com/package/apicache
+*/
+var apicache =  require('apicache');
+let cache = apicache.middleware;
+
+
+/*git */
 
 router.get('/', function(req, res, next){
   res.status(200).send(`enter git name as param`);
 })
 
-router.get('/:userId', function(req, res, next){
+router.get('/:userId',cache('15 minutes'),  function(req, res, next){
 
   let user = req.params.userId;
 

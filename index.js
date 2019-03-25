@@ -8,6 +8,8 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+
+
 const helmet = require('helmet');
 
 const app = express();
@@ -31,6 +33,8 @@ app.get('/', (req, res) =>
 //routes
 const gitRoute = require('./routes/git');
 app.use('/git', gitRoute);
+const twitterRoute = require('./routes/twitter');
+app.use('/twitter', twitterRoute);
 
 
 const port = config.server.port;
