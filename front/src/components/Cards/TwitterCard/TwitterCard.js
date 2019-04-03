@@ -35,7 +35,7 @@ class TwitterCard extends Component {
   render() {
 
     const twitterDefault = (
-      <div className="footerCard">
+      <div className="liveCard">
         <img className="svgMask--twitter" src={twitterLogo} alt="Twitter icon"/>
 
         <div className="footerIconInfo">
@@ -46,10 +46,10 @@ class TwitterCard extends Component {
 
 
     const twitterSuccess = (
-      <div className="footerCard">
+      <div className="liveCard">
         <img className="svgMask--twitter" src={this.state.avatar} alt={this.state.name}/>
 
-        <div className="footerCard-Info">
+        <div className="liveCard-Info">
           <a target="_blank"  className="text--center" href={this.state.url}>{this.state.name}</a>
           <p>Last tweet @ {this.state.tweetDate}: <br/>
              &laquo;<span> {this.state.tweetText} </span>&raquo;
