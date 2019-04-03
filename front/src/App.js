@@ -7,8 +7,7 @@ import Contacts from './Views/Contacts/Contacts'
 import ErrorPage from './Views/Error/Error'
 
 import Navpanel from './components/Navpanel/Navpanel'
-import GitCard from './components/Cards/GitCard/GitCard'
-import TwitterCard from './components/Cards/TwitterCard/TwitterCard'
+
 
 class App extends Component {
   render() {
@@ -16,22 +15,23 @@ class App extends Component {
       <BrowserRouter>
         <>
 
-          <header>
+          <header className="container">
             <Navpanel/>
           </header>
 
-          <div className="content">
+
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/contacts" component={Contacts} />
               <Route component={ErrorPage} />
             </Switch>
-          </div>
+
 
           <footer className="footer">
             <div className="container">
-              <GitCard user="Snailsloth"/>
-              <TwitterCard user="SnailslothPug"/>
+              <b className="text--center">@snsl {new Date().getFullYear()}</b>
+
+
             </div>
           </footer>
 

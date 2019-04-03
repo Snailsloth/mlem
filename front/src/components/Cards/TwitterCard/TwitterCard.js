@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../Card.scss'
+import '../Card.scss'
 import twitterLogo from './twitter.svg'
 
 class TwitterCard extends Component {
@@ -26,7 +26,7 @@ class TwitterCard extends Component {
           name: data.username,
           avatar: data.userimage,
           url: data.userLink,
-          tweetDate: data.lastTweetDate.slice(0,9),
+          tweetDate: data.lastTweetDate.slice(0,10),
           tweetText: data.lastTweetText
       })
     })
@@ -37,9 +37,8 @@ class TwitterCard extends Component {
     const twitterDefault = (
       <div className="liveCard">
         <img className="svgMask--twitter" src={twitterLogo} alt="Twitter icon"/>
-
-        <div className="footerIconInfo">
-          <a href="/">Twitter username</a>
+        <div className="liveCardInfo">
+          <p>Twitter username</p>
         </div>
       </div>
     )
@@ -50,7 +49,7 @@ class TwitterCard extends Component {
         <img className="svgMask--twitter" src={this.state.avatar} alt={this.state.name}/>
 
         <div className="liveCard-Info">
-          <a target="_blank"  className="text--center" href={this.state.url}>{this.state.name}</a>
+          <p>Twitter: <a target="_blank" rel="noopener noreferrer" href={this.state.url}>{this.state.name}</a></p>
           <p>Last tweet @ {this.state.tweetDate}: <br/>
              &laquo;<span> {this.state.tweetText} </span>&raquo;
           </p>

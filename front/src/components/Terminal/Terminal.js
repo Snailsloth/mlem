@@ -58,7 +58,7 @@ class Terminal extends Component {
 
   render() {
     return (
-      <div className="terminal-wrapper">
+      <div className="shadow-wrapper">
         <div className="terminal">
           <div className="header">
             <div className="header-buttons">

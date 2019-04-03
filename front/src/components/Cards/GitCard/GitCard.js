@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../Card.scss'
+import '../Card.scss'
 import gitLogo from './Octicons-mark-github.svg'
 
 class GitCard extends Component {
@@ -11,7 +11,7 @@ class GitCard extends Component {
       url: ``
     }
   }
-
+//https://stackoverflow.com/questions/21869795/github-api-retrieve-user-commits
   componentDidMount(){
     fetch(`http://localhost:5000/git/${this.props.user}`)
     .then(results => {
@@ -31,9 +31,8 @@ class GitCard extends Component {
     const gitDefault = (
       <div className="liveCard">
         <img className="svgMask--git" src={gitLogo} alt="Git icon"/>
-
-        <div className="footerIconInfo">
-          <a href="/">Github username</a>
+        <div className="liveCardInfo">
+          <p>Github username</p>
         </div>
       </div>
     )
@@ -44,8 +43,9 @@ class GitCard extends Component {
         <img className="svgMask--git" src={this.state.avatar} alt={this.state.name}/>
 
         <div className="liveCard-Info">
-          <a target="_blank"  className="text--center" href={this.state.url}>{this.state.name}</a>
-          <p>Last commit in project: <br/>
+          <p>Github: <a target="_blank" rel="noopener noreferrer" href={this.state.url}>{this.state.name}</a> </p>
+
+          <p>Last commit in this project: <br/>
             <span>#soon </span>
           </p>
         </div>
