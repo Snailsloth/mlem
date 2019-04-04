@@ -26,16 +26,20 @@
       margin: 0;
       span{
         margin-top: 5px;
-        color: #19a2ea;
+        color: var(--color-main);
         line-height: 1.4;
       }
     }
   }
 }
 
+.liveCard:hover .liveCard img{
+  transform: rotateY(360deg);
+  transition: transform 0.6s ease-in-out;
+}
 
 
-//footer cards
+//mask for images
 .svgMask{
   mask-mode: alpha;
   webkit-mask-mode: alpha;

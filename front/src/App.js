@@ -29,7 +29,7 @@ class App extends Component {
 
           <footer className="footer">
             <div className="container">
-              <b className="text--center">@snsl {new Date().getFullYear()}</b>
+              <b className="text--center">_od {new Date().getFullYear()}</b>
 
 
             </div>

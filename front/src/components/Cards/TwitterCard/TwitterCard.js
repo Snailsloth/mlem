@@ -10,16 +10,15 @@ class TwitterCard extends Component {
       avatar: ``,
       url: ``,
       tweetDate: '',
-      tweetText: ''
+      tweetText: '',
+      tweetUrl: ''
     }
   }
 
   componentDidMount(){
     fetch(`http://localhost:5000/twitter/${this.props.user}`)
     .then(results => {
-      // console.log(results.json())
       return results.json()
-
     })
     .then(data => {
       this.setState({
@@ -27,7 +26,8 @@ class TwitterCard extends Component {
           avatar: data.userimage,
           url: data.userLink,
           tweetDate: data.lastTweetDate.slice(0,10),
-          tweetText: data.lastTweetText
+          tweetText: data.lastTweetText,
+          tweetUrl: data.lastTweetUrl
       })
     })
   }
@@ -51,7 +51,9 @@ class TwitterCard extends Component {
         <div className="liveCard-Info">
           <p>Twitter: <a target="_blank" rel="noopener noreferrer" href={this.state.url}>{this.state.name}</a></p>
           <p>Last tweet @ {this.state.tweetDate}: <br/>
-             &laquo;<span> {this.state.tweetText} </span>&raquo;
+             &laquo;
+             <a href={this.state.tweetUrl} target="_blank" >{this.state.tweetText}</a>
+             &raquo;
           </p>
         </div>
       </div>
