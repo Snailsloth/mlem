@@ -111,7 +111,7 @@ table{
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: left;
   tr{
     display: table-row;
@@ -127,4 +127,11 @@ table{
   td{
     font-weight: normal;
   }
+}
+
+
+//just for fun while i wasnt dreate close-minimize-fullscreen effects for terminal
+.filter_Inverted{
+  -webkit-filter: invert(.8);
+  filter: invert(.8);
 }

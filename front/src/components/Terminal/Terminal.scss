@@ -55,6 +55,7 @@ $letter-spacing: 2px;
       display: block;
       width: $button-width;
       height: $button-height;
+      border: none;
       border-radius: 50%;
       transition: .1s ease-in-out;
       cursor: pointer;

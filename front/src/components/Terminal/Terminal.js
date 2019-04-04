@@ -3,8 +3,29 @@ import ConsoleText from './ConsoleText'
 import './Terminal.scss'
 
 class Terminal extends Component {
-  state = {
+  constructor(props){
+    super(props);
+    this.state = {
+      toggleInvert : false
+    }
+   this.invertBody = this.invertBody.bind(this);
+  }
 
+
+
+  invertBody(){
+    console.log(this)
+    if(this.state.toggleInvert === false){
+      document.body.classList.add("filter_Inverted");
+      this.setState(state => ({
+         toggleInvert: true
+      }));
+    } else {
+      document.body.classList.remove("filter_Inverted");
+      this.setState(state => ({
+         toggleInvert: false
+      }));
+    }
   }
 
 
@@ -58,9 +79,9 @@ class Terminal extends Component {
         <div className="terminal">
           <div className="header">
             <div className="header-buttons">
-              <span className="header-button--left"></span>
-              <span className="header-button--center"></span>
-              <span className="header-button--right"></span>
+              <button onClick={this.invertBody} className="header-button--left"></button>
+              <button className="header-button--center"></button>
+              <button className="header-button--right"></button>
             </div>
             <span className="header-text">{this.props.headerTitle}</span>
           </div>
