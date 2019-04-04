@@ -6,7 +6,7 @@ class ConsoleText extends Component {
     this.state = {
       commandInput: this.props.commandInput,
       maxspeed: this.props.maxspeed,
-      output: false
+      output: false,
     };
   }
 
@@ -41,26 +41,47 @@ class ConsoleText extends Component {
 
     let output = (
       <React.Fragment>
-      <p><span></span>
-      <span className="w100">~~~~~</span>
-      <span>Name: </span><span className="blue">Oleg</span>
-      <span className="w100"></span>
-      <span>Location: </span><span className="blue">Russia, Saint-Petersburg</span>
-      <span className="w100">~~~~~</span>
-      </p>
-      <p>
-        <span></span><span className="cursor"></span>
+
+      <table>
+        <tbody>
+          <tr>
+            <th className="blue">Name:</th>
+            <td>Oleg</td>
+          </tr>
+          <tr>
+            <th className="blue">Location:</th>
+            <td>Russia, Saint-Petersburg</td>
+          </tr>
+          <tr>
+            <th><span className="icon heart"></span></th>
+            <td>
+              <span className="w100 icon node icon-text">Node JS , Express</span>
+              <span className="w100 icon js icon-text">JS</span>
+              <span className="w100 icon pug icon-text">Pug</span>
+              <span className="w100 icon stylus icon-text">Stylus, Sass</span>
+              <span className="w100 icon react icon-text">React</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p >
+        <span className="cursor"></span>
       </p>
       </React.Fragment>
     )
 
     return (
       <React.Fragment>
-      <p><span></span> <span className="typeWriter" data-words={this.state.commandtext}></span>
+      <p><span className="typeWriter" data-words={this.state.commandtext}></span>
+
+
+
       </p>
       {
         this.state.output === true ? output : false
       }
+
       </React.Fragment>
     );
   }

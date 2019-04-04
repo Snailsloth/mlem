@@ -52,7 +52,7 @@ class TwitterCard extends Component {
           <p>Twitter: <a target="_blank" rel="noopener noreferrer" href={this.state.url}>{this.state.name}</a></p>
           <p>Last tweet @ {this.state.tweetDate}: <br/>
              &laquo;
-             <a href={this.state.tweetUrl} target="_blank" >{this.state.tweetText}</a>
+             <a href={this.state.tweetUrl} target="_blank" rel="noopener noreferrer">{this.state.tweetText}</a>
              &raquo;
           </p>
         </div>

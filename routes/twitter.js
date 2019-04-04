@@ -46,7 +46,7 @@ router.get('/:screenName', cache('15 minutes'), function(req, res, next){
         lastTweetDate: tweets[0].created_at,
         lastTweetText: tweets[0].text,
         lastTweetUrl: `https://twitter.com/statuses/${tweets[0].id_str}`
-      }
+      };
       res.json(cardInfo);
     } else {
       res.status(400).send(error);

@@ -1,0 +1,33 @@
+.icon{
+  display: block;
+  float:left;
+  min-width: 1.5rem;
+  height: 2rem;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  &.icon-text{
+    @extend .icon;
+    padding-left: 2.2rem;
+    line-height: 2;
+  }
+}
+
+.icon.heart{
+  background-image: url("../assets/icons/heart.svg");
+}
+.icon.js{
+  background-image: url("../assets/icons/js_color.svg");
+}
+.icon.node{
+  background-image: url("../assets/icons/nodejs_color.svg");
+}
+.icon.pug{
+  background-image: url("../assets/icons/pug_color.svg");
+}
+.icon.react{
+  background-image: url("../assets/icons/react_color.svg");
+}
+.icon.stylus{
+  background-image: url("../assets/icons/stylus_color.svg");
+}

@@ -4,11 +4,7 @@ import './Terminal.scss'
 
 class Terminal extends Component {
   state = {
-    text: {
-      first: {
-        input: "whoiami",
-      }
-    }
+
   }
 
 
@@ -69,7 +65,7 @@ class Terminal extends Component {
             <span className="header-text">{this.props.headerTitle}</span>
           </div>
           <div className="terminal-content">
-            <ConsoleText commandInput={this.state.text.first.input} maxspeed="3500"/>
+            <ConsoleText commandInput="whoiami" maxspeed="3500"/>
           </div>
         </div>
       </div>

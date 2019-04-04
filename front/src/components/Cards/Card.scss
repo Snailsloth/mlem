@@ -24,7 +24,8 @@
     p{
       color: var(--color-main-lighter);
       margin: 0;
-      span{
+      >span,a{
+        font-size: 1rem;
         margin-top: 5px;
         color: var(--color-main);
         line-height: 1.4;

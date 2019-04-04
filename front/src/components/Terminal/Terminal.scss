@@ -19,6 +19,17 @@ $button-space: 20px;
 
 $letter-spacing: 2px;
 
+
+.red{
+  color: $red-color;
+
+}
+.blue{
+  color: $blue-color;
+}
+
+
+
 .terminal{
   width: 100%;
   min-height: 500px;
@@ -89,24 +100,22 @@ $letter-spacing: 2px;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-  span{
-    line-height: 1.5em;
-    &:first-child{
-      font-weight: bold;
-      margin-right: 15px;
-      &:before{
-        content:"snsl@mlem:~$";
-        display: block;
-        color: $green-color;
-        width: auto;
-      }
-    }
-    &.red{
-      color: $red-color;
 
+    font-weight: bold;
+    margin-right: 15px;
+    &:before{
+      content:"snsl@mlem:~$";
+      display: block;
+      color: $green-color;
+      width: auto;
     }
-    &.blue{
-      color: $blue-color;
+
+  >span{
+    line-height: 1.5em;
+
+    //add margin for span but not for "bash text"
+    &:first-child{
+      margin-left: $letter-spacing*3;
     }
     &.w100{
       width:100%;
@@ -118,10 +127,8 @@ $letter-spacing: 2px;
       border-left: 2px solid $text-color;
       animation: blinking 1s infinite;
     }
-    //add margin for span but not for "bash text"
-    &:not(:first-child){
-      margin-right: $letter-spacing*3;
-    }
+
+
   }
 }
 
