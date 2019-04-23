@@ -1,44 +1,66 @@
-.margin{
-  &--auto{
+.margin {
+  &--auto {
     margin: auto;
   }
-  &--large-top{
-    margin-top: (1rem * 3)!important;
+  &--large-top {
+    margin-top: (1rem * 3) !important;
   }
-  &--small-top{
-    margin-top: (1rem)!important;
+  &--small-top {
+    margin-top: (1rem) !important;
   }
-  &--remove-top{
-    margin-top: (0)!important;
+  &--remove-top {
+    margin-top: (0) !important;
   }
-  &--large-bottom{
-    margin-bottom: (1rem * 3)!important;
+  &--large-bottom {
+    margin-bottom: (1rem * 3) !important;
   }
-  &--small-bottom{
-    margin-bottom: (1rem)!important;
+  &--small-bottom {
+    margin-bottom: (1rem) !important;
   }
-  &--remove-bottom{
-    margin-bottom: (0)!important;
+  &--remove-bottom {
+    margin-bottom: (0) !important;
   }
 }
 
-.w100{
-  width:100%;
+.w100 {
+  width: 100%;
 }
 
-.text{
+.text {
   display: block;
-  width:100%;
-  &--center{
+  width: 100%;
+  &--center {
     @extend .text;
     text-align: center;
   }
-  &--left{
+  &--left {
     @extend .text;
     text-align: center;
   }
-  &--right{
+  &--right {
     @extend .text;
     text-align: center;
   }
+}
+
+//display block, inline-block, flex, flex--column
+.is {
+  &Block {
+    display: block;
+  }
+  &Inline-Block {
+    display: block;
+  }
+  &Flex {
+    display: flex;
+    &--column {
+      @extend .isFlex;
+      flex-direction: column;
+    }
+  }
+}
+
+//overfl hidden
+.of--hidden {
+  overflow: hidden;
 }
