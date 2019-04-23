@@ -1,6 +1,22 @@
+header {
+  background-color: var(--color-body);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  > * {
+    flex: 1 1 30%;
+  }
+
+  .header-Logo {
+    img {
+      max-height: 100px;
+    }
+  }
+}
+
 nav {
   max-width: 950px;
-  margin-left: 2rem;
   text-align: left;
   font-size: 1.3rem;
   p {

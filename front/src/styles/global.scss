@@ -58,7 +58,7 @@ body {
 .neonFontHeader {
   font-family: "neon_absolute_sansregular";
   font-weight: 300;
-  font-size: 6rem;
+  font-size: 2.5rem;
   &--glowing {
     @extend .neonFontHeader;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
@@ -70,16 +70,6 @@ body {
 //   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 //   monospace;
 // }
-
-header {
-  background-color: var(--color-body);
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  .header-Logo {
-    max-height: 100px;
-  }
-}
 
 .container {
   margin: 0 auto;

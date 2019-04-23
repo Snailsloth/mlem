@@ -28,22 +28,61 @@ function loop() {
   setTimeout(loop, 10);
 }
 
-loop();
+// loop();
 
 class App extends Component {
+  state = {
+    pageName: ""
+  };
+
+  /* Весь этот гемморой с функцией в пропсы и хуком в функциональном компоненте
+  начался только из за того что мне приперло сделать имя страницы 
+  не в самом загружаемом компоненте страницы, а в хедере. 
+  Скорее всего есть пути и легче но пока что вот как то так вот так. Я верю, что когда-нибудь ты поумнеешь, Олежа */
+  onPageSwitch = pageName => {
+    this.setState({
+      pageName: pageName
+    });
+    console.log(pageName);
+  };
+
   render() {
     return (
       <BrowserRouter>
         <>
           <header className='container'>
-            <Navpanel />
+            <Navpanel activePage={this.state.pageName} />
           </header>
 
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/contacts' component={Contacts} />
-            {/* <Route component={ErrorPage} /> */}
-            <Route component={NotFound} />
+            <Route
+              exact
+              path='/'
+              render={routeProps => (
+                <Home {...routeProps} pageSwitchHandler={this.onPageSwitch} />
+              )}
+            />
+
+            <Route
+              exact
+              path='/contacts'
+              render={routeProps => (
+                <Contacts
+                  {...routeProps}
+                  pageSwitchHandler={this.onPageSwitch}
+                />
+              )}
+            />
+
+            <Route
+              render={routeProps => (
+                <NotFound
+                  {...routeProps}
+                  pageName={"404"}
+                  pageSwitchHandler={this.onPageSwitch}
+                />
+              )}
+            />
           </Switch>
 
           <footer className='footer'>

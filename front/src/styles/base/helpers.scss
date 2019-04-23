@@ -35,11 +35,11 @@
   }
   &--left {
     @extend .text;
-    text-align: center;
+    text-align: left;
   }
   &--right {
     @extend .text;
-    text-align: center;
+    text-align: right;
   }
 }
 
