@@ -1,14 +1,13 @@
-@import "setup/normalize";
-@import "font/stylesheet.css";
-@import "base/helpers.scss";
-@import "base/icons.scss";
+@import 'setup/normalize';
+@import 'base/helpers.scss';
+@import 'base/icons.scss';
 
-:root {
+:root{
   --font-size: 16px;
   --max-width-inner: 980px;
   --padding: 10px 20px;
-  --color-body: #262829;
-  --color-main: #f3f3f3;
+  --color-body: #f3f3f3;
+  --color-main: #262829;
   --color-main-lighter: #828d92;
   --color-blue: #19a2ea;
   --color-blue-lighter: #6fceff;
@@ -17,29 +16,31 @@
   --link-hover-color: var(--color-blue-lighter);
 }
 
-html,
-body,
-#root {
+
+
+
+
+html,body, #root{
   height: 100%;
 }
 
-#root {
+#root{
   display: flex;
   flex-direction: column;
 }
 
-a {
+a{
   color: var(--link-base-color);
-  transition: 0.2s;
-  &:hover {
+  transition: .2s;
+  &:hover{
     color: var(--link-hover-color);
   }
 }
 
-body {
+body{
   background-color: var(--color-body);
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,41 +48,22 @@ body {
   color: var(--color-main);
 }
 
-.neonFont {
-  font-family: "absolute_neon_scriptregular";
-  &--glowing {
-    @extend .neonFont;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6fceff, 0 0 30px #ff0080,
-      0 0 40px #6fceff, 0 0 55px #6fceff, 0 0 75px #6fceff;
-  }
-}
-.neonFontHeader {
-  font-family: "neon_absolute_sansregular";
-  font-weight: 300;
-  font-size: 6rem;
-  &--glowing {
-    @extend .neonFontHeader;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-      0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
-  }
-}
-
 // code {
 //   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 //   monospace;
 // }
 
-header {
+header{
   background-color: var(--color-body);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  .header-Logo {
+  .header-Logo{
     max-height: 100px;
   }
 }
 
-.container {
+.container{
   margin: 0 auto;
   width: 100%;
   max-width: var(--max-width-inner);
@@ -89,63 +71,67 @@ header {
   box-sizing: border-box;
 }
 
-.content {
+
+.content{
   flex: 1 0 auto;
   padding-bottom: 20px;
   // background-color: #262829;
-  .heading {
+  .heading{
     color: var(--color-main);
-    font-size: 40px;
   }
 }
 
-.shadow-wrapper {
+.shadow-wrapper{
   background-color: #ffffff;
   border-radius: 10px;
   padding: 1rem;
   box-sizing: border-box;
   perspective: 1000px;
   margin: 0 auto;
-  -moz-box-shadow: inset 3px 10px 15px rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: inset 3px 10px 15px rgba(0, 0, 0, 0.16);
-  box-shadow: inset 3px 10px 15px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow:    inset  3px 10px 15px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset  3px 10px 15px rgba(0, 0, 0, 0.16);
+  box-shadow:         inset  3px 10px 15px rgba(0, 0, 0, 0.16);
 }
 
-footer {
-  background-color: var(--color-body);
-  color: var(--color-main);
-  width: 100%;
+
+
+footer{
+  background-color: #ffffff;
+  width:100%;
   padding: 2em 0;
-  -moz-box-shadow: inset 0 12px 23px -12px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow:    inset 0 12px 23px -12px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: inset 0 12px 23px -12px rgba(0, 0, 0, 0.36);
-  box-shadow: inset 0 12px 23px -12px rgba(0, 0, 0, 0.36);
+  box-shadow:         inset 0 12px 23px -12px rgba(0, 0, 0, 0.36);
 }
+
+
 
 //TODO:put to separate component
-table {
+table{
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   vertical-align: top;
   text-align: left;
-  tr {
+  tr{
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
   }
-  th {
+  th{
     width: 80px;
     text-align: left;
     vertical-align: top;
     font-size: 14px;
   }
-  td {
+  td{
     font-weight: normal;
   }
 }
 
+
 //just for fun while i wasnt dreate close-minimize-fullscreen effects for terminal
-.filter_Inverted {
-  -webkit-filter: invert(0.8);
-  filter: invert(0.8);
+.filter_Inverted{
+  -webkit-filter: invert(.8);
+  filter: invert(.8);
 }

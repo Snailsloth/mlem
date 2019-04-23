@@ -9,9 +9,7 @@ class Contacts extends Component {
   render() {
     return (
       <div className='container content of--hidden'>
-        <h1 className='text--center heading neonFontHeader--glowing'>
-          {this.state.pageName}
-        </h1>
+        <h1 className='text--center heading'>{this.state.pageName}</h1>
         <div className='shadow-wrapper'>
           <GitCard user='Snailsloth' />
           <TwitterCard user='SnailslothPug' />

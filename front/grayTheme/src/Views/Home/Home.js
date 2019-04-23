@@ -8,10 +8,8 @@ class Home extends Component {
   };
   render() {
     return (
-      <div className='container content'>
-        <h1 className='text--center heading neonFontHeader--glowing'>
-          {this.state.pageName}
-        </h1>
+      <div className='container content of--hidden'>
+        <h1 className='text--center heading'>{this.state.pageName}</h1>
         <Terminal headerTitle='Hello world' />
       </div>
     );

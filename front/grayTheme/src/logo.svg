@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="120"
+   height="120"
+   viewBox="0 0 31.749999 31.750001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/snailsloth/favicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <title
+     id="title830">Mlem</title>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4203343"
+     inkscape:cx="622.30271"
+     inkscape:cy="503.05347"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     units="px"
+     inkscape:showpageshadow="true"
+     showborder="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Mlem</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+        <dc:date>25.03.19</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>https://github.com/Snailsloth</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>https://github.com/Snailsloth</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>https://github.com/Snailsloth</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>mlemmlem.ml</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>logo for personal website: https://mlemmlem.ml</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="slash"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-265.24998)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="star">
+    <path
+       style="fill:#262829;fill-opacity:1;stroke:#262829;stroke-width:0.17195639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 158.37565,-161.50083 c 0,0 -25.51104,29.44906 -49.65241,39.03712 l 49.65241,55.302795 v -68.362745 l -0.98002,1.65542 -5.97985,-3.61276 v 6.70965 h -2.02888 v -6.70965 l -5.97985,3.61276 -1.03207,-1.74409 6.38925,-3.47036 -6.38925,-3.45256 1.03207,-1.76188 5.97985,3.61277 v -6.70933 h 2.02888 v 6.70933 l 5.97985,-3.61277 0.98002,1.67255 z m 0,18.9938 -6.33686,3.42434 6.33686,3.44182 z"
+       id="path4641"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.5691334;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect905"
+       width="81.695869"
+       height="19.52091"
+       x="82.683678"
+       y="-105.18999" />
+    <g
+       aria-label="Mlem ml"
+       transform="matrix(0.31747229,0,0,0.31747229,-24.706968,19.547522)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#262829;fill-opacity:1;stroke:none"
+       id="flowRoot917">
+      <path
+         d="m 357.35058,-381.16146 h 7.83854 l 9.92188,26.45834 9.97396,-26.45834 h 7.83854 v 38.88021 h -5.13021 v -34.14062 l -10.02604,26.66666 h -5.28646 l -10.02604,-26.66666 v 34.14062 h -5.10417 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262829;fill-opacity:1"
+         id="path955" />
+      <path
+         d="m 403.18392,-382.80208 h 4.79166 v 40.52083 h -4.79166 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262829;fill-opacity:1"
+         id="path957" />
+      <path
+         d="m 442.9235,-358.0625 v 2.34375 h -22.03125 q 0.3125,4.94792 2.96875,7.55209 2.68229,2.57812 7.44792,2.57812 2.76041,0 5.33854,-0.67708 2.60417,-0.67709 5.15625,-2.03125 v 4.53125 q -2.57813,1.09375 -5.28646,1.66666 -2.70833,0.57292 -5.49479,0.57292 -6.97917,0 -11.06771,-4.0625 -4.0625,-4.0625 -4.0625,-10.98958 0,-7.16146 3.85417,-11.35417 3.88021,-4.21875 10.44271,-4.21875 5.88541,0 9.29687,3.80208 3.4375,3.77604 3.4375,10.28646 z m -4.79167,-1.40625 q -0.0521,-3.93229 -2.21354,-6.27604 -2.13541,-2.34375 -5.67708,-2.34375 -4.01042,0 -6.43229,2.26562 -2.39584,2.26563 -2.76042,6.38021 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262829;fill-opacity:1"
+         id="path959" />
+      <path
+         d="m 473.49642,-365.84896 q 1.79687,-3.22916 4.29687,-4.76562 2.5,-1.53646 5.88542,-1.53646 4.55729,0 7.03125,3.20312 2.47396,3.17709 2.47396,9.0625 v 17.60417 h -4.81771 v -17.44792 q 0,-4.1927 -1.48438,-6.22395 -1.48437,-2.03125 -4.53125,-2.03125 -3.72395,0 -5.88541,2.47395 -2.16146,2.47396 -2.16146,6.7448 v 16.48437 H 469.486 v -17.44792 q 0,-4.21875 -1.48437,-6.22395 -1.48438,-2.03125 -4.58334,-2.03125 -3.67187,0 -5.83333,2.5 -2.16146,2.47395 -2.16146,6.71875 v 16.48437 h -4.81771 v -29.16667 h 4.81771 v 4.53125 q 1.64063,-2.68229 3.93229,-3.95833 2.29167,-1.27604 5.44271,-1.27604 3.17708,0 5.39063,1.61458 2.23958,1.61459 3.30729,4.6875 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262829;fill-opacity:1"
+         id="path961" />
+      <path
+         d="m 542.45475,-365.84896 q 1.79688,-3.22916 4.29688,-4.76562 2.5,-1.53646 5.88542,-1.53646 4.55729,0 7.03125,3.20312 2.47395,3.17709 2.47395,9.0625 v 17.60417 h -4.8177 v -17.44792 q 0,-4.1927 -1.48438,-6.22395 -1.48437,-2.03125 -4.53125,-2.03125 -3.72396,0 -5.88542,2.47395 -2.16145,2.47396 -2.16145,6.7448 v 16.48437 h -4.81771 v -17.44792 q 0,-4.21875 -1.48438,-6.22395 -1.48437,-2.03125 -4.58333,-2.03125 -3.67188,0 -5.83334,2.5 -2.16145,2.47395 -2.16145,6.71875 v 16.48437 h -4.81771 v -29.16667 h 4.81771 v 4.53125 q 1.64062,-2.68229 3.93229,-3.95833 2.29166,-1.27604 5.44271,-1.27604 3.17708,0 5.39062,1.61458 2.23959,1.61459 3.30729,4.6875 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262829;fill-opacity:1"
+         id="path963" />
+      <path
+         d="m 571.72559,-382.80208 h 4.79167 v 40.52083 h -4.79167 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#262829;fill-opacity:1"
+         id="path965" />
+    </g>
+  </g>
+</svg>

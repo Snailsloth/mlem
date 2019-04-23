@@ -3,11 +3,49 @@ nav {
   margin-left: 2rem;
   text-align: left;
   font-size: 1.3rem;
+  p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+  }
   a {
     display: inline-block;
+    letter-spacing: 6px;
     margin-left: 1rem;
     &.active {
       display: none;
     }
+  }
+}
+
+nav:hover {
+  p {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6fceff, 0 0 30px #ff0080,
+      0 0 40px #6fceff, 0 0 55px #6fceff, 0 0 75px #6fceff;
+    span {
+      animation: letter-flickering 0.5s ease infinite;
+    }
+  }
+}
+
+@keyframes letter-flickering {
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    color: var(--color-body);
+  }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    color: var(--color-main);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6fceff, 0 0 30px #ff0080,
+      0 0 40px #6fceff, 0 0 55px #6fceff, 0 0 75px #6fceff;
   }
 }

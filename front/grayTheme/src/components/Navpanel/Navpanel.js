@@ -6,11 +6,9 @@ class Navpanel extends Component {
   render() {
     return (
       <>
-        <img src='/assets/logo_v2_white.png' alt='' className='header-Logo' />
+        <img src='/assets/mlemlogo.png' alt='' className='header-Logo' />
         <nav role='navigation' aria-label='Main navigation'>
-          <p className='neonFont'>
-            Go <span>t</span>o:
-          </p>
+          <span>Go to: </span>
           <NavLink exact to='/'>
             Home
           </NavLink>
