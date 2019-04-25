@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.923" height="40.209" viewBox="0 0 10.828 10.639">
+  <text x="-2.929" y="300.827" stroke-width=".265" font-family="EYFA Tokva" font-size="10.583" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" transform="translate(.122 -286.389)" word-spacing="0"/>
+  <g stroke="#262829">
+    <path fill="#ffff29" stroke-linecap="round" stroke-linejoin="round" stroke-width=".353" d="M.441.441h9.946v9.757H.44z"/>
+    <g stroke-width=".265" aria-label="js" font-family="EYFA Tokva" font-size="3.887" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" word-spacing="0">
+      <path d="M2.546 7.284h2.737v.061H2.546v-.06zm0 2.29v-.061q.19 0 .364-.053.175-.05.327-.145.28-.174.451-.467.171-.296.171-.649V6.806h.06V8.2q0 .2-.052.383-.057.182-.152.341-.182.293-.494.471-.307.179-.675.179zm0-2.798h2.737v.06H2.546v-.06zM8.282 9.574H5.514v-.061h2.707V7.349H5.484v-.573h2.768v.06H5.545v.452h2.737v2.286z"/>
+    </g>
+    <g fill="#262829" stroke-width=".124" aria-label="&lt;/&gt;" font-family="FreeMono" font-size="4.972" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:FreeMono;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" word-spacing="0">
+      <path d="M3.536 4.507q0 .035-.03.075-.03.04-.07.04-.024 0-.064-.025L1.3 3.443 3.377 2.29q.04-.025.06-.025.035 0 .065.034.034.035.034.075 0 .055-.064.09l-1.765.979 1.765.98q.064.034.064.084zM6.319 1.693l-1.626 3.46q-.045.09-.11.09-.04 0-.07-.03-.029-.03-.029-.064 0-.025.025-.08l1.626-3.46q.04-.09.11-.09.039 0 .069.03.03.03.03.064 0 .03-.025.08zM7.291 2.374q0-.025.025-.065.03-.044.075-.044.025 0 .064.025L9.53 3.443 7.45 4.597q-.04.024-.06.024-.039 0-.069-.034-.03-.035-.03-.08 0-.05.065-.084l1.765-.98-1.765-.98q-.065-.034-.065-.089z"/>
+    </g>
+  </g>
+</svg>

@@ -3,10 +3,10 @@ import ConsoleText from "./ConsoleText";
 import "./Terminal.scss";
 
 class Terminal extends Component {
-  _isMounted = false;
   constructor(props) {
     super(props);
     this.state = {
+      isMounted: false,
       toggleInvert: false
     };
     this.invertBody = this.invertBody.bind(this);
@@ -65,7 +65,16 @@ class Terminal extends Component {
   }
 
   componentDidMount() {
+    this.setState({
+      isMounted: true
+    });
     this.skewThis(".terminal");
+  }
+
+  componentWillUnmount() {
+    this.setState({
+      isMounted: false
+    });
   }
 
   render() {
@@ -84,11 +93,9 @@ class Terminal extends Component {
             <span className='header-text'>{this.props.headerTitle}</span>
           </div>
           <div className='terminal-content'>
-            <ConsoleText
-              ismounted={this._isMounted}
-              commandInput='whoiami'
-              maxspeed='3500'
-            />
+            {this.state.isMounted ? (
+              <ConsoleText commandInput='whoiami' maxspeed='3500' />
+            ) : null}
           </div>
         </div>
       </div>
@@ -97,3 +104,18 @@ class Terminal extends Component {
 }
 
 export default Terminal;
+
+/*FIXME::
+when change page to "contacts" before text in terminal loaded
+seems like no help from "this.state.isMounted" technique  ¯\_(ツ)_/¯
+
+index.js:1446 Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+    in ConsoleText (at Terminal.js:97)
+    in div (at Terminal.js:95)
+    in div (at Terminal.js:83)
+    in div (at Terminal.js:82)
+    in Terminal (at Home.js:17)
+    in div (at Home.js:16)
+    in Home (at App.js:61)
+
+*/

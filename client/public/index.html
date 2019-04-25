@@ -22,7 +22,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
     <title>Mlem!</title>
   </head>
   <body>
@@ -39,4 +42,29 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    /*Matthew's wavy url
+http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/#%E2%96%81%E2%96%82%E2%96%84%E2%96%86%E2%96%88%E2%96%88%E2%96%88%E2%96%87%E2%96%85%E2%96%83
+*/
+    function loop() {
+      var i,
+        n,
+        s = "";
+
+      for (i = 0; i < 10; i++) {
+        n = Math.floor(Math.sin(Date.now() / 200 + i / 2) * 4) + 4;
+
+        s += String.fromCharCode(0x2581 + n);
+      }
+
+      document.title = `Mlem! ${s}`;
+
+      let wavyElem = document.querySelector(`.wavingString`);
+      wavyElem ? (wavyElem.innerHTML = s) : (wavyElem = null);
+
+      setTimeout(loop, 10);
+    }
+
+    loop();
+  </script>
 </html>

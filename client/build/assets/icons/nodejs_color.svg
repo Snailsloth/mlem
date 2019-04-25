@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 10.583 10.583">
+  <g stroke="#262829">
+    <path fill="#84eb78" stroke-linecap="round" stroke-linejoin="round" stroke-width=".647" d="M5.303 10.132l-4.197-2.41-.012-4.84L5.28.451l4.198 2.41.011 4.84z"/>
+    <g aria-label="JS" style="line-height:1.25">
+      <g fill="#262829" stroke-width="3.093" aria-label="js" font-family="EYFA Tokva" font-size="37.489" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" word-spacing="0">
+        <path stroke-width=".38297526" d="M1.685 4.229h3.268V4.3H1.685V4.23zm0 2.733V6.89q.226 0 .435-.064.208-.059.39-.172.335-.209.54-.558.203-.353.203-.775V3.657h.073V5.321q0 .24-.064.458-.068.218-.181.408-.218.349-.59.562-.367.213-.806.213zm0-3.34h3.268v.072H1.685V3.62zM8.899 6.962H5.594V6.89h3.232V4.306H5.558V3.62h3.305v.073H5.63v.54H8.9v2.728z"/>
+      </g>
+    </g>
+  </g>
+</svg>

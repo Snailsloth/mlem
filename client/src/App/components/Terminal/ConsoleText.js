@@ -4,6 +4,7 @@ class ConsoleText extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isMounted: false,
       commandInput: this.props.commandInput,
       maxspeed: this.props.maxspeed,
       output: false
@@ -20,17 +21,33 @@ class ConsoleText extends Component {
         txtElement.innerHTML += words.charAt(i);
         i++;
         setTimeout(writeText, speed);
+      } else if (i === words.length && this.state.isMounted === false) {
+        return null;
       } else {
-        this.setState({
-          output: true
-        });
+        this.state.isMounted
+          ? this.setState({
+              output: true
+            })
+          : this.setState({
+              output: false
+            });
       }
     };
     writeText();
   }
 
   componentDidMount() {
+    this.setState({
+      isMounted: true
+    });
     this.initTyping();
+  }
+
+  componentWillUnmount() {
+    this.setState({
+      isMounted: false,
+      output: false
+    });
   }
 
   render() {

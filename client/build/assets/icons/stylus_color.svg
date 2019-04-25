@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.387" height="41.387" viewBox="0 0 10.95 10.95">
+  <g>
+    <path fill="#fff" fill-opacity=".971" stroke="#262829" stroke-linecap="round" stroke-linejoin="round" stroke-width=".278992" d="M.37.37h10.21v10.21H.37z"/>
+    <g stroke="#262829" stroke-linecap="round" stroke-linejoin="round" stroke-width=".529">
+      <path fill="#87cc2d" stroke-width=".53605686" d="M1.673 1.166h3.783v8.617H1.673z"/>
+      <path fill="#73cc6b" stroke-width=".53605686" d="M5.455 1.166h3.783v8.617H5.455z"/>
+    </g>
+    <g stroke="#fff" stroke-opacity=".986" stroke-width=".481">
+      <g aria-label="st" font-family="EYFA Tokva" font-size="5.644" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" word-spacing="0">
+        <path stroke-width=".18853757" d="M3.066 6.143H1.491v-.035h1.54V4.876H1.475V4.55h1.575v.035h-1.54v.257h1.557v1.3zM3.18 4.55h1.576v.035H3.18V4.55zm.77.017h.037v1.576H3.95v-.79-.786z" style="-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start"/>
+      </g>
+      <g aria-label="us" font-family="EYFA Tokva" font-size="5.644" font-weight="400" letter-spacing="0" style="line-height:1.25;-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" word-spacing="0">
+        <path stroke-width=".18853757" d="M7.77 6.159H6.16V4.566h.035v1.558h1.54V4.566h.035V6.16zM9.476 6.159H7.901v-.035h1.54V4.893H7.885v-.327H9.46v.035H7.92v.257h1.557v1.3z" style="-inkscape-font-specification:'EYFA Tokva, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start"/>
+      </g>
+      <path fill="none" stroke-width=".18853757" d="M4.976 4.513c.362.405.563.95.55 1.493-.01.403-.134.803-.356 1.14-.221.336-.539.609-.905.777-.366.168-.78.231-1.18.18A2.178 2.178 0 0 1 1.99 7.63M6.197 6.8a2.189 2.189 0 0 1-.55-1.492c.01-.403.134-.803.355-1.14.222-.336.539-.609.905-.777.366-.168.78-.231 1.18-.18.4.052.784.217 1.095.473"/>
+    </g>
+  </g>
+</svg>

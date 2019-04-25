@@ -7,17 +7,18 @@ const NotFound = props => {
   }, []); // passing an empty array as second argument triggers the callback in useEffect only after the initial render thus replicating `componentDidMount` lifecycle behaviour
 
   return (
-    <div className='container content'>
-      <h1 className='text--center heading'>Not Found</h1>
-      <video
-        className='isBlock margin--auto'
-        autoPlay={true}
-        loop={true}
-        muted={true}
-      >
-        <source src='/assets/404.webm' type='video/webm' />
-        <source src='/assets/404.mp4' type='video/mp4' />
-      </video>
+    <div className='container content of--hidden'>
+      <div className='shadow-wrapper'>
+        <video
+          className='isBlock w100 h100 margin--auto'
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        >
+          <source src='/assets/404.webm' type='video/webm' />
+          <source src='/assets/404.mp4' type='video/mp4' />
+        </video>
+      </div>
     </div>
   );
 };
