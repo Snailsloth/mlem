@@ -1,0 +1,56 @@
+$card-img-width: 6rem;
+
+.liveCard {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  background-color: var(--color-body);
+  color: #ffffff;
+  img {
+    display: block;
+    margin-right: 2rem;
+    width: $card-img-width;
+    height: $card-img-width;
+  }
+  .liveCard-Info {
+    flex-basis: 500px;
+    padding-left: 1rem;
+    a {
+      font-size: 1.2rem;
+    }
+    p {
+      margin: 0;
+      > span,
+      a {
+        font-size: 1rem;
+        margin-top: 5px;
+        color: var(--color-blue);
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+//mask for images
+// .svgMask {
+//   mask-mode: alpha;
+//   webkit-mask-mode: alpha;
+//   mask-repeat: no-repeat;
+//   webkit-mask-repeat: no-repeat;
+//   mask-size: $card-img-width;
+//   webkit-mask-size: $card-img-width;
+//   mask-position: center;
+//   webkit-mask-position: center;
+//   &--git {
+//     @extend .svgMask;
+//     mask-image: url(./GitCard/Octicons-mark-github.svg);
+//   }
+//   &--twitter {
+//     @extend .svgMask;
+//     mask-image: url(./TwitterCard/twitter.svg);
+//   }
+// }

@@ -4,14 +4,20 @@
 @import "base/icons.scss";
 
 :root {
+  --theme: dark;
   --font-size: 16px;
   --max-width-inner: 980px;
   --padding: 10px 20px;
+  --border-radius: 10px;
   --color-body: #262829;
-  --color-main: #f3f3f3;
-  --color-main-lighter: #828d92;
+  //_main_colors
+  --color-dark: #262829;
+  --color-light: #f3f3f3;
   --color-blue: #19a2ea;
   --color-blue-lighter: #6fceff;
+  //font
+  --font-light: var(--color-light);
+  --font-dark: var(--color-dark);
   //link
   --link-base-color: var(--color-blue);
   --link-hover-color: var(--color-blue-lighter);
@@ -44,7 +50,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: var(--font-size);
-  color: var(--color-main);
+  color: var(--font-light);
 }
 
 .neonFont {
@@ -84,7 +90,7 @@ body {
   padding-bottom: 20px;
   // background-color: #262829;
   .heading {
-    color: var(--color-main);
+    color: var(--font-light);
     font-size: 40px;
   }
 }
@@ -103,7 +109,7 @@ body {
 
 footer {
   background-color: var(--color-body);
-  color: var(--color-main);
+  color: var(--font-light);
   width: 100%;
   padding: 2em 0;
   -moz-box-shadow: inset 0 12px 23px -12px rgba(0, 0, 0, 0.36);

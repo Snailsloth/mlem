@@ -6,6 +6,9 @@
   "author": "snailsloth",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "apicache": "^1.4.0",
     "axios": "^0.18.0",

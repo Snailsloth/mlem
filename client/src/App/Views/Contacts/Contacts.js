@@ -18,7 +18,7 @@ class Contacts extends Component {
           <GitCard user='Snailsloth' />
           <TwitterCard user='SnailslothPug' />
           <div className='liveCard'>
-            <img src='static/media/telegram.svg' alt='' />
+            <img src='assets/icons/paperairplane-grad.svg' alt='' />
             <div className='liveCard-Info'>
               <p>
                 T.me:{" "}
