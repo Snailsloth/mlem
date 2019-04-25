@@ -13,27 +13,25 @@ class Contacts extends Component {
 
   render() {
     return (
-      <div className='container content of--hidden'>
-        <div className='shadow-wrapper'>
-          <GitCard user='Snailsloth' />
-          <TwitterCard user='SnailslothPug' />
-          <div className='liveCard'>
-            <img src='assets/icons/paperairplane-grad.svg' alt='' />
-            <div className='liveCard-Info'>
-              <p>
-                T.me:{" "}
-                <a
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  href='https://t.me/Snailsloth'
-                >
-                  @Snailsloth
-                </a>{" "}
-              </p>
-            </div>
+      <>
+        <GitCard user='Snailsloth' />
+        <TwitterCard user='SnailslothPug' />
+        <div className='liveCard'>
+          <img src='assets/icons/paperairplane-grad.svg' alt='' />
+          <div className='liveCard-Info'>
+            <p>
+              T.me:{" "}
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://t.me/Snailsloth'
+              >
+                @Snailsloth
+              </a>{" "}
+            </p>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

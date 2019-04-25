@@ -32,36 +32,43 @@ class App extends Component {
             <Navpanel activePage={this.state.pageName} />
           </header>
 
-          <Switch>
-            <Route
-              exact
-              path='/'
-              render={routeProps => (
-                <Home {...routeProps} pageSwitchHandler={this.onPageSwitch} />
-              )}
-            />
-
-            <Route
-              exact
-              path='/contacts'
-              render={routeProps => (
-                <Contacts
-                  {...routeProps}
-                  pageSwitchHandler={this.onPageSwitch}
+          <div className='container content of--hidden'>
+            <div className='shadow-wrapper'>
+              <Switch>
+                <Route
+                  exact
+                  path='/'
+                  render={routeProps => (
+                    <Home
+                      {...routeProps}
+                      pageSwitchHandler={this.onPageSwitch}
+                    />
+                  )}
                 />
-              )}
-            />
 
-            <Route
-              render={routeProps => (
-                <NotFound
-                  {...routeProps}
-                  pageName={"404"}
-                  pageSwitchHandler={this.onPageSwitch}
+                <Route
+                  exact
+                  path='/contacts'
+                  render={routeProps => (
+                    <Contacts
+                      {...routeProps}
+                      pageSwitchHandler={this.onPageSwitch}
+                    />
+                  )}
                 />
-              )}
-            />
-          </Switch>
+
+                <Route
+                  render={routeProps => (
+                    <NotFound
+                      {...routeProps}
+                      pageName={"404"}
+                      pageSwitchHandler={this.onPageSwitch}
+                    />
+                  )}
+                />
+              </Switch>
+            </div>
+          </div>
 
           <footer className='footer'>
             <div className='container'>

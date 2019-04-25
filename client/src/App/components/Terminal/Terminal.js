@@ -79,7 +79,7 @@ class Terminal extends Component {
 
   render() {
     return (
-      <div className='shadow-wrapper'>
+      <>
         <div className='terminal'>
           <div className='header'>
             <div className='header-buttons'>
@@ -98,7 +98,7 @@ class Terminal extends Component {
             ) : null}
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
