@@ -1,4 +1,4 @@
-:root{
+:root {
   --terminal-x: 0;
   --terminal-y: 0;
 }
@@ -7,7 +7,6 @@
 $background-color: #262829;
 $text-color: #ffffff;
 $padding-horizontal: 30px;
-
 
 $red-color: #ff293c;
 $yellow-color: #ffe256;
@@ -19,27 +18,26 @@ $button-space: 20px;
 
 $letter-spacing: 2px;
 
-
-.red{
+.red {
   color: $red-color;
-
 }
-.blue{
+.blue {
   color: $blue-color;
 }
 
-
-
-.terminal{
+.terminal {
   width: 100%;
   min-height: 500px;
   background-color: $background-color;
   color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 14px 25px rgba(0,0,0,0.36);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.36);
+  -webkit-perspective: 468px;
+  perspective: 468px;
   transform: rotateY(var(--terminal-x)) rotateX(var(--terminal-y));
-  transition: .3s;
-  .header{
+  //-moz-transform: none;
+  transition: 0.3s;
+  .header {
     position: relative;
     display: flex;
     align-items: center;
@@ -48,7 +46,7 @@ $letter-spacing: 2px;
     padding: 0 $padding-horizontal;
     box-sizing: border-box;
     // border-bottom: 3px solid #ffffff;
-    .header-buttons{
+    .header-buttons {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -57,33 +55,33 @@ $letter-spacing: 2px;
       height: $button-height;
       border: none;
       border-radius: 50%;
-      transition: .1s ease-in-out;
+      transition: 0.1s ease-in-out;
       cursor: pointer;
-      & .header-button--left{
+      & .header-button--left {
         @extend .header-buttons;
         background-color: $red-color;
         left: 0;
       }
-      & .header-button--center{
+      & .header-button--center {
         @extend .header-buttons;
         background-color: $yellow-color;
         left: $button-space + $button-width;
       }
-      & .header-button--right{
+      & .header-button--right {
         @extend .header-buttons;
         background-color: $green-color;
-        left: ($button-space + $button-width) * 2 ;
+        left: ($button-space + $button-width) * 2;
       }
     }
-    .header-text{
+    .header-text {
       width: 100%;
-      padding: 0 (($button-width * 3)+ $button-space * 2 );
+      padding: 0 (($button-width * 3) + $button-space * 2);
       text-align: center;
       font-weight: bold;
       font-size: 1.2em;
     }
   }
-  .terminal-content{
+  .terminal-content {
     padding: 0 $padding-horizontal;
     padding-bottom: 15px;
     box-sizing: border-box;
@@ -91,45 +89,43 @@ $letter-spacing: 2px;
   }
 }
 
-.header-buttons > *:hover{
-  opacity: .5;
+.header-buttons > *:hover {
+  opacity: 0.5;
 }
 
-.terminal-content p{
-    display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
+.terminal-content p {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 
-    font-weight: bold;
-    margin-right: 15px;
-    &:before{
-      content:"snsl@mlem:~$";
-      display: block;
-      color: $green-color;
-      width: auto;
-    }
+  font-weight: bold;
+  margin-right: 15px;
+  &:before {
+    content: "snsl@mlem:~$";
+    display: block;
+    color: $green-color;
+    width: auto;
+  }
 
-  >span{
+  > span {
     line-height: 1.5em;
 
     //add margin for span but not for "bash text"
-    &:first-child{
-      margin-left: $letter-spacing*3;
+    &:first-child {
+      margin-left: $letter-spacing * 3;
     }
-    &.w100{
-      width:100%;
+    &.w100 {
+      width: 100%;
     }
-    &.cursor{
+    &.cursor {
       width: 20px;
       height: 20px;
       box-sizing: border-box;
       border-left: 2px solid $text-color;
       animation: blinking 1s infinite;
     }
-
-
   }
 }
 

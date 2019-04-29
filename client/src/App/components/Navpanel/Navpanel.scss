@@ -7,6 +7,17 @@ header {
   > * {
     flex: 1 1 30%;
   }
+  @media only screen and (max-width: 768px) {
+    :nth-child(-n + 2) {
+      flex-basis: 50%;
+    }
+    :last-child {
+      flex-basis: 100%;
+    }
+    .pagename {
+      text-align: right;
+    }
+  }
 
   .header-Logo {
     img {

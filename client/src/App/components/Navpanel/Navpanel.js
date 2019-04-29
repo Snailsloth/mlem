@@ -9,7 +9,7 @@ const Navpanel = props => {
         <img src='/assets/logo_v2_white.png' alt='Site logo' />
       </div>
 
-      <h1 className='heading neonFontHeader--glowing text--center'>
+      <h1 className='heading pagename neonFontHeader--glowing text--center'>
         {props.activePage}
       </h1>
       <nav

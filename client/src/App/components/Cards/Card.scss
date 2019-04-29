@@ -17,7 +17,7 @@ $card-img-width: 6rem;
     height: $card-img-width;
   }
   .liveCard-Info {
-    flex-basis: 500px;
+    flex-basis: 40%;
     padding-left: 1rem;
     a {
       font-size: 1.2rem;
@@ -31,6 +31,19 @@ $card-img-width: 6rem;
         color: var(--color-blue);
         line-height: 1.4;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .liveCard {
+    flex-flow: column wrap;
+    align-items: flex-start;
+    img {
+      padding: 1rem;
+    }
+    .liveCard-Info {
+      flex-basis: 100%;
     }
   }
 }

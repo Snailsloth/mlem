@@ -77,6 +77,28 @@ class ConsoleText extends Component {
                 <span className='w100 icon react icon-text'>React</span>
               </td>
             </tr>
+            <tr>
+              <th className='blue'>
+                <b>Last</b> projects:
+              </th>
+              <td>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://gwg.su/'
+                >
+                  https://gwg.su/
+                </a>{" "}
+                <br />
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://gw.spb.ru/'
+                >
+                  https://gw.spb.ru/
+                </a>
+              </td>
+            </tr>
           </tbody>
         </table>
 
