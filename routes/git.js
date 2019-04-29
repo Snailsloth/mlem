@@ -25,12 +25,10 @@ router.get("/:userId", cache("15 minutes"), function(req, res, next) {
     .get(`https://api.github.com/users/${user}`)
     .then(response => {
       // handle success
-      // console.log(response.data);
       res.json(response.data);
     })
     .catch(error => {
       // handle error
-      // console.log(error);
       res.status(400).send(error);
     });
 });
