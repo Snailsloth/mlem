@@ -1,12 +1,9 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const env = process.env.NODE_ENV || 'development';
-const config = require('../secret')[env];
+const env = process.env.NODE_ENV || "development";
+const config = require("../secret")[env];
 
-const axios = require('axios');
-
-const twitter = require('twitter');
-
+const twitter = require("twitter");
 
 var client = new twitter({
   consumer_key: config.twitter.apiKey,
@@ -15,29 +12,28 @@ var client = new twitter({
   access_token_secret: config.twitter.accessTokenSecret
 });
 
-
-
-
-
 /*
 cache for requests, 15min
 https://www.npmjs.com/package/apicache
 */
-const apicache =  require('apicache');
+const apicache = require("apicache");
 let cache = apicache.middleware;
 
 /*twitter */
 
-router.get('/', function(req, res, next){
+router.get("/", function(req, res, next) {
   res.status(200).send(`ok`);
-})
+});
 
-router.get('/:screenName', cache('15 minutes'), function(req, res, next){
-
+router.get("/:screenName", cache("15 minutes"), function(req, res, next) {
   let user = req.params.screenName;
-  let params = {screen_name: user, count: 1};
+  let params = { screen_name: user, count: 1 };
 
-  client.get('statuses/user_timeline', params, function(error, tweets, response) {
+  client.get("statuses/user_timeline", params, function(
+    error,
+    tweets,
+    response
+  ) {
     if (!error) {
       let cardInfo = {
         username: tweets[0].user.screen_name,
@@ -51,8 +47,7 @@ router.get('/:screenName', cache('15 minutes'), function(req, res, next){
     } else {
       res.status(400).send(error);
     }
-  })
-})
-
+  });
+});
 
 module.exports = router;

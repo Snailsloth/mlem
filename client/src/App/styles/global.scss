@@ -22,6 +22,9 @@
   //link
   --link-base-color: var(--color-blue);
   --link-hover-color: var(--color-blue-lighter);
+  @include breakpoint(mobileonly) {
+    --padding: 6px;
+  }
 }
 
 html,
@@ -66,6 +69,9 @@ body {
   font-family: "neon_absolute_sansregular";
   font-weight: 300;
   font-size: 2.5rem;
+  @include breakpoint(mobileonly) {
+    font-size: 1.9rem;
+  }
   &--glowing {
     @extend .neonFontHeader;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
@@ -106,6 +112,9 @@ body {
   -moz-box-shadow: inset 3px 10px 15px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: inset 3px 10px 15px rgba(0, 0, 0, 0.16);
   box-shadow: inset 3px 10px 15px rgba(0, 0, 0, 0.16);
+  @include breakpoint(mobileonly) {
+    padding: 0.3rem;
+  }
 }
 
 footer {

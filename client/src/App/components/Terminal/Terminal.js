@@ -94,7 +94,7 @@ class Terminal extends Component {
           </div>
           <div className='terminal-content'>
             {this.state.isMounted ? (
-              <ConsoleText commandInput='whoiami' maxspeed='3500' />
+              <ConsoleText commandInput='whoami' maxspeed='3500' />
             ) : null}
           </div>
         </div>

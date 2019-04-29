@@ -13,7 +13,7 @@ class GitCard extends Component {
   }
   //https://stackoverflow.com/questions/21869795/github-api-retrieve-user-commits
   componentDidMount() {
-    fetch(`http://localhost:5000/git/${this.props.user}`)
+    fetch(`https://mlemmlem.ml/git/${this.props.user}`)
       .then(results => {
         return results.json();
         // console.log(results.json())
