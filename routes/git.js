@@ -33,7 +33,6 @@ router.get("/:userId/:repo", cache("15 minutes"), function(req, res, next) {
       let pushEvent = response.data.find(event => {
         return event.type === "PushEvent";
       });
-      console.log(pushEvent.payload);
       res.json(pushEvent.payload);
     })
     .catch(error => {

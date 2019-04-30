@@ -6,24 +6,26 @@ class GitCard extends Component {
   constructor() {
     super();
     this.state = {
-      name: ``,
-      avatar: ``,
-      url: ``
+      commits: []
     };
   }
   //https://stackoverflow.com/questions/21869795/github-api-retrieve-user-commits
   componentDidMount() {
-    fetch(`https://mlemmlem.ml/git/${this.props.user}`)
+    fetch(`http://localhost:5000/git/${this.props.user}/${this.props.repo}`)
       .then(results => {
         return results.json();
       })
       .then(data => {
-        this.setState({
-          name: data.login,
-          avatar: data.avatar_url,
-          url: data.html_url
-        });
+        console.log(data);
+        this.setState({});
       });
+    // .then(data => {
+    //   this.setState({
+    //     name: data.login,
+    //     avatar: data.avatar_url,
+    //     url: data.html_url
+    //   });
+    // });
   }
 
   render() {
@@ -56,7 +58,7 @@ class GitCard extends Component {
       </div>
     );
 
-    return this.state.name.length > 0 ? gitSuccess : gitDefault;
+    return this.state.commits.length > 0 ? gitSuccess : gitDefault;
   }
 }
 

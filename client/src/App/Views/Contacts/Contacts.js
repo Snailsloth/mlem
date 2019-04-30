@@ -14,7 +14,7 @@ class Contacts extends Component {
   render() {
     return (
       <>
-        <GitCard user='Snailsloth' />
+        <GitCard user='Snailsloth' repo='mlem' />
         <TwitterCard user='SnailslothPug' />
         <div className='liveCard'>
           <img src='assets/icons/paperairplane-grad.svg' alt='' />
