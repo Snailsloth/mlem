@@ -12,6 +12,7 @@ class Terminal extends Component {
     this.invertBody = this.invertBody.bind(this);
   }
 
+  //инверт. фильтр при клике на кнопку "терминала"
   invertBody() {
     // if (this.state.toggleInvert === false) {
     //   document.body.classList.add("filter_Inverted");
