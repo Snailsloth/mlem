@@ -12,7 +12,7 @@ class GitCard extends Component {
     };
   }
   componentDidMount() {
-    fetch(`http://localhost:5000/git/${this.props.user}/${this.props.repo}`)
+    fetch(`https://mlemmlem.ml/git/${this.props.user}/${this.props.repo}`)
       .then(results => {
         return results.json();
       })
