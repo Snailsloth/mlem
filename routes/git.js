@@ -17,7 +17,7 @@ router.get("/", function(req, res, next) {
   res.status(200).send(`enter /:userId/:repo`);
 });
 
-router.get("/:userId/:repo", cache("15 minutes"), function(req, res, next) {
+router.get("/:userId/:repo", cache("0 minutes"), function(req, res, next) {
   let user = req.params.userId;
   let repository = req.params.repo;
 
@@ -33,7 +33,12 @@ router.get("/:userId/:repo", cache("15 minutes"), function(req, res, next) {
       let pushEvent = response.data.find(event => {
         return event.type === "PushEvent";
       });
-      res.json(pushEvent.payload);
+      //now we got our last push event for user, and in "payload" we got "commits" - its array of commits that come
+      //with last push event. We want last one
+      let lastCommit =
+        pushEvent.payload.commits[pushEvent.payload.commits.length - 1];
+
+      res.json(lastCommit);
     })
     .catch(error => {
       // handle error

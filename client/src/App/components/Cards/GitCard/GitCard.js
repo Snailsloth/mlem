@@ -6,59 +6,55 @@ class GitCard extends Component {
   constructor() {
     super();
     this.state = {
-      commits: []
+      commit: {
+        url: ""
+      }
     };
   }
-  //https://stackoverflow.com/questions/21869795/github-api-retrieve-user-commits
   componentDidMount() {
     fetch(`http://localhost:5000/git/${this.props.user}/${this.props.repo}`)
       .then(results => {
         return results.json();
       })
       .then(data => {
-        console.log(data);
-        this.setState({});
+        this.setState({
+          commit: data
+        });
       });
-    // .then(data => {
-    //   this.setState({
-    //     name: data.login,
-    //     avatar: data.avatar_url,
-    //     url: data.html_url
-    //   });
-    // });
   }
 
   render() {
-    const gitDefault = (
-      <div className='liveCard'>
-        <img className='svgMask--git' src={gitLogo} alt='Git icon' />
-        <div className='liveCardInfo'>
-          <p>Github username</p>
-        </div>
-      </div>
-    );
-
     const gitSuccess = (
       <div className='liveCard'>
-        <img className='svgMask--git' src={gitLogo} alt={this.state.name} />
+        <img className='svgMask--git' src={gitLogo} alt='Git Icon' />
 
         <div className='liveCard-Info'>
           <p>
-            Github:{" "}
-            <a target='_blank' rel='noopener noreferrer' href={this.state.url}>
-              {this.state.name}
-            </a>{" "}
-          </p>
-
-          <p>
-            Last commit in this project: <br />
-            <span>#soon </span>
+            Last commit on
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href={`https://github.com/${this.props.user}/${this.props.repo}`}
+            >
+              {" "}
+              this{" "}
+            </a>
+            project:
+            <br />
+            &laquo;
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href={this.state.commit.url}
+            >
+              {this.state.commit.message}
+            </a>
+            &raquo;
           </p>
         </div>
       </div>
     );
-
-    return this.state.commits.length > 0 ? gitSuccess : gitDefault;
+    return gitSuccess;
   }
 }
 
