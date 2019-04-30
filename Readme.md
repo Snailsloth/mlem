@@ -1,10 +1,16 @@
 # mlemmlem.ml personal page
-
 Using Express, react cli , sass
 
-####secret file construction
 
-```
+## installation
+
+clone, npm install in root dir, yarn build in "client" dir
+
+### secret file 
+
+In project root: 
+
+```javascript
 var config = {
   development: {
       secret:'',
