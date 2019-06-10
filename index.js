@@ -1,7 +1,7 @@
 const env = process.env.NODE_ENV || "development";
 
 const config = require("./secret")[env];
-var https = require("https");
+let https = require("https");
 const express = require("express");
 // const router = express.Router();
 const path = require("path");
