@@ -1,11 +1,11 @@
-var express = require("express");
-var router = express.Router();
+let express = require("express");
+let router = express.Router();
 const env = process.env.NODE_ENV || "development";
 const config = require("../secret")[env];
 
 const twitter = require("twitter");
 
-var client = new twitter({
+let client = new twitter({
   consumer_key: config.twitter.apiKey,
   consumer_secret: config.twitter.apiSecret,
   access_token_key: config.twitter.accessToken,
