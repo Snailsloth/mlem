@@ -1,5 +1,5 @@
-var express = require("express");
-var router = express.Router();
+let express = require("express");
+let router = express.Router();
 const env = process.env.NODE_ENV || "development";
 
 const axios = require("axios");
@@ -8,7 +8,7 @@ const axios = require("axios");
 cache for requests, 15min
 https://www.npmjs.com/package/apicache
 */
-var apicache = require("apicache");
+let apicache = require("apicache");
 let cache = apicache.middleware;
 
 /*git */
