@@ -16,8 +16,9 @@ class TwitterCard extends Component {
   }
 
   componentDidMount() {
-    fetch(`https://mlemmlem.ml/twitter/${this.props.user}`)
+    fetch(`http://localhost:5000/twitter/${this.props.user}`)
       .then(results => {
+        
         return results.json();
       })
       .then(data => {

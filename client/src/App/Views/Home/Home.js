@@ -4,7 +4,7 @@ import Terminal from "../../components/Terminal/Terminal";
 
 class Home extends Component {
   state = {
-    pageName: "Homepage"
+    pageName: "HOME"
   };
 
   componentDidMount() {
