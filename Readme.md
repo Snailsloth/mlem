@@ -4,7 +4,7 @@ Using Express, react cli , sass
 
 ## installation
 
-clone, npm install in root dir, yarn build in "client" dir
+clone, npm install in root dir, yarn install in "client" dir
 
 ### secret file 
 
@@ -47,3 +47,10 @@ var config = {
   };
 module.exports = config;
 ```
+
+
+## TODO: 
+⋅⋅* git card doesnt work
+⋅⋅* make and separate 1 function for both requests
+
+refactor everything 
