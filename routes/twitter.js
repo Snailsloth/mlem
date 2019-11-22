@@ -31,8 +31,7 @@ router.get("/:screenName", cache("15 minutes"), function(req, res, next) {
 
   client.get("statuses/user_timeline", params, function(
     error,
-    tweets,
-    response
+    tweets
   ) {
     if (!error) {
       let cardInfo = {
