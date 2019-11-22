@@ -7,7 +7,8 @@ class GitCard extends Component {
     super();
     this.state = {
       commit: {
-        url: ""
+        url: "",
+        message: "smth wrong again..sorry"
       }
     };
   }
@@ -20,6 +21,7 @@ class GitCard extends Component {
         this.setState({
           commit: data
         });
+        console.log(data)
       });
   }
 
