@@ -41,7 +41,7 @@ app.use(
     includeSubDomains: false
   })
 );
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "front")));
 
 // app.get("/", (req, res) => {
 //   res.status(200).send("Ok");
@@ -55,7 +55,7 @@ app.use("/twitter", twitterRoute);
 
 // Handles any requests that don't match the ones above
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  res.sendFile(path.join(__dirname + "/front/index.html"));
 });
 
 const port = config.server.port;
