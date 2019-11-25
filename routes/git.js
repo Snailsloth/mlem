@@ -28,7 +28,6 @@ router.get("/:userId/:repo", cache("0 minutes"), function(req, res, next) {
         message: response.data.commit.message,
         url: response.data.html_url
       }
-      console.log(gitResponse);
       res.json(gitResponse);
     })
     .catch(error => {

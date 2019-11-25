@@ -41,9 +41,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-### secret file 
+### secret file examle
 
-In project root: 
+In project root create secret.js file for env and api keys settings: 
 
 ```javascript
 var config = {
@@ -85,7 +85,6 @@ module.exports = config;
 
 
 ## TODO: 
-⋅⋅* git card doesnt work
-⋅⋅* make and separate 1 function for both requests
+⋅⋅* more mvc
 
 refactor everything 
